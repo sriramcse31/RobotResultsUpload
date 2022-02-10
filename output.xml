@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.1 (Python 3.9.7 on win32)" generated="20220210 11:56:10.782" rpa="false" schemaversion="2">
+<suite id="s1" name="Xrayresults" source="C:\Users\288054J\Documents\Repos\TestResults\xrayresults.robot">
+<test id="s1-t1" name="Check the result of the sum of 2 numbers">
+<kw name="Sum of 2 numbers">
+<var>${sum}</var>
+<arg>2</arg>
+<arg>4</arg>
+<kw name="Evaluate" library="BuiltIn">
+<var>${res}</var>
+<arg>${num1}+${num2}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20220210 11:56:10.811" level="INFO">${res} = 6</msg>
+<status status="PASS" starttime="20220210 11:56:10.810" endtime="20220210 11:56:10.811"/>
+</kw>
+<msg timestamp="20220210 11:56:10.811" level="INFO">${sum} = 6</msg>
+<status status="PASS" starttime="20220210 11:56:10.810" endtime="20220210 11:56:10.811"/>
+</kw>
+<kw name="Should Be Equal As Integers" library="BuiltIn">
+<arg>${sum}</arg>
+<arg>6</arg>
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<msg timestamp="20220210 11:56:10.812" level="INFO">Argument types are:
+&lt;class 'int'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" starttime="20220210 11:56:10.812" endtime="20220210 11:56:10.812"/>
+</kw>
+<tag>positive</tag>
+<status status="PASS" starttime="20220210 11:56:10.809" endtime="20220210 11:56:10.812"/>
+</test>
+<test id="s1-t2" name="Check the result of the substraction of 2 numbers">
+<kw name="Substrct 2 numbers">
+<var>${diff}</var>
+<arg>4</arg>
+<arg>2</arg>
+<kw name="Evaluate" library="BuiltIn">
+<var>${res}</var>
+<arg>${num1}-${num2}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20220210 11:56:10.815" level="INFO">${res} = 2</msg>
+<status status="PASS" starttime="20220210 11:56:10.815" endtime="20220210 11:56:10.815"/>
+</kw>
+<msg timestamp="20220210 11:56:10.815" level="INFO">${diff} = 2</msg>
+<status status="PASS" starttime="20220210 11:56:10.814" endtime="20220210 11:56:10.815"/>
+</kw>
+<kw name="Should Be Equal As Integers" library="BuiltIn">
+<arg>${diff}</arg>
+<arg>2</arg>
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<msg timestamp="20220210 11:56:10.816" level="INFO">Argument types are:
+&lt;class 'int'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" starttime="20220210 11:56:10.815" endtime="20220210 11:56:10.816"/>
+</kw>
+<tag>positive</tag>
+<status status="PASS" starttime="20220210 11:56:10.813" endtime="20220210 11:56:10.816"/>
+</test>
+<test id="s1-t3" name="Check the result of the multiplication of 2 numbers">
+<kw name="Multiple 2 numbers">
+<var>${product}</var>
+<arg>4</arg>
+<arg>2</arg>
+<kw name="Evaluate" library="BuiltIn">
+<var>${res}</var>
+<arg>${num1}*${num2}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20220210 11:56:10.818" level="INFO">${res} = 8</msg>
+<status status="PASS" starttime="20220210 11:56:10.818" endtime="20220210 11:56:10.818"/>
+</kw>
+<msg timestamp="20220210 11:56:10.818" level="INFO">${product} = 8</msg>
+<status status="PASS" starttime="20220210 11:56:10.818" endtime="20220210 11:56:10.818"/>
+</kw>
+<kw name="Should Be Equal As Integers" library="BuiltIn">
+<arg>${product}</arg>
+<arg>9</arg>
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<msg timestamp="20220210 11:56:10.819" level="INFO">Argument types are:
+&lt;class 'int'&gt;
+&lt;type 'unicode'&gt;</msg>
+<msg timestamp="20220210 11:56:10.820" level="FAIL">8 != 9</msg>
+<status status="FAIL" starttime="20220210 11:56:10.819" endtime="20220210 11:56:10.820"/>
+</kw>
+<tag>positive</tag>
+<status status="FAIL" starttime="20220210 11:56:10.817" endtime="20220210 11:56:10.821">8 != 9</status>
+</test>
+<test id="s1-t4" name="Check the result of the division of 2 numbers">
+<kw name="Division of 2 numbers">
+<var>${div}</var>
+<arg>6</arg>
+<arg>2</arg>
+<kw name="Evaluate" library="BuiltIn">
+<var>${res}</var>
+<arg>${num1}/${num2}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20220210 11:56:10.825" level="INFO">${res} = 3.0</msg>
+<status status="PASS" starttime="20220210 11:56:10.824" endtime="20220210 11:56:10.825"/>
+</kw>
+<msg timestamp="20220210 11:56:10.825" level="INFO">${div} = 3.0</msg>
+<status status="PASS" starttime="20220210 11:56:10.824" endtime="20220210 11:56:10.825"/>
+</kw>
+<kw name="Should Be Equal As Integers" library="BuiltIn">
+<arg>${div}</arg>
+<arg>3</arg>
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<msg timestamp="20220210 11:56:10.826" level="INFO">Argument types are:
+&lt;class 'float'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status status="PASS" starttime="20220210 11:56:10.825" endtime="20220210 11:56:10.826"/>
+</kw>
+<tag>positive</tag>
+<status status="PASS" starttime="20220210 11:56:10.824" endtime="20220210 11:56:10.826"/>
+</test>
+<doc>A test suite for valid login.
+
+Keywords are imported from the resource file</doc>
+<status status="FAIL" starttime="20220210 11:56:10.783" endtime="20220210 11:56:10.829"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="3" fail="1" skip="0">positive</stat>
+</tag>
+<suite>
+<stat pass="3" fail="1" skip="0" id="s1" name="Xrayresults">Xrayresults</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
